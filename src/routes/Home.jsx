@@ -27,7 +27,7 @@ const HomePage = () => {
                 <div>
                     <AnimatedBackground animationName="auroraBorealis" />
                     <div className="sm:w-1/2 w-1/2 md:w-1/3 absolute top-[15.00%] left-[10.00%] bg-[#011627] text-white p-6 rounded-lg shadow-lg bg-opacity-50">
-                        <h1 className="text-5xl font-extrabold text-[#41EAD4] mb-6">Cipher Curve LLC</h1>
+                        <h1 className="text-5xl font-extrabold text-[#41EAD4] mb-6">Ciphercurve LLC</h1>
                         <p className="text-lg text-white leading-relaxed">
                             We are a software contracting company focussing on Rust and Blockchain development, with deep expertise in Applied Cryptography and Zero Knowledge Proofs.
                         </p>
