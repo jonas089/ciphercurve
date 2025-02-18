@@ -8,7 +8,13 @@ import "./index.css";
 const Navbar = () => {
   return (
     <nav className="bg-[#012B3A] p-4 shadow-md flex justify-between items-center">
-      <div className="text-white text-2xl font-bold">todo: logo</div>
+      <div>
+        <img
+          src="/placeholder.png" // Replace with actual logo path
+          alt="Logo"
+          className="w-12 h-12 rounded-full"
+        />
+      </div>
       <div>
         <Link to="/" className="text-white hover:text-[#41EAD4] px-4">Home</Link>
         <Link to="/team" className="text-white hover:text-[#41EAD4] px-4">Team</Link>
