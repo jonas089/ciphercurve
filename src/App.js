@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Link, Routes, Route } from 'react-router-dom';
+import Home from "./routes/Home";
+import Team from "./routes/Team";
+import "./index.css";
 
-function App() {
+const Navbar = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <nav className="bg-[#012B3A] p-4 shadow-md flex justify-between items-center">
+      <div className="text-white text-2xl font-bold">todo: logo</div>
+      <div>
+        <Link to="/" className="text-white hover:text-[#41EAD4] px-4">Home</Link>
+        <Link to="/team" className="text-white hover:text-[#41EAD4] px-4">Team</Link>
+      </div>
+    </nav>
+  );
+};
+
+const App = () => {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <div className="flex-1">
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="team" element={<Team />} />
+        </Routes>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
