@@ -15,7 +15,7 @@ class Team extends React.Component {
     render() {
         return (
             <div className="min-h-screen text-white p-6">
-                <AnimatedBackground animationName="rainbowWaves" />
+                <AnimatedBackground animationName="auroraBorealis" />
                 <h2 className="text-3xl font-bold text-center text-white mb-6">On the Curve</h2>
                 <div className="flex flex-wrap justify-center gap-6">
                     {teamMembers.map((member, index) => (
