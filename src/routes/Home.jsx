@@ -24,18 +24,23 @@ const HomePage = () => {
     return (
         <div>
             <div className="w-full min-h-screen flex flex-col md:flex-row items-center justify-between px-10 py-20 relative">
-                <div>
+                <div className="relative min-h-screen flex items-center justify-center px-6">
                     <AnimatedBackground animationName="auroraBorealis" />
-                    <div className="sm:w-full sm:left-[0.00%] w-1/2 md:w-1/3 absolute top-[15.00%] left-[10.00%] bg-[#011627] text-white p-6 rounded-lg shadow-lg bg-opacity-50">
-                        <h1 className="text-5xl font-extrabold text-[#41EAD4] mb-6">Ciphercurve LLC</h1>
-                        <p className="text-lg text-white leading-relaxed">
-                            We are a software contracting company focussing on Rust and Blockchain development, with deep expertise in Applied Cryptography and Zero Knowledge Proofs.
+
+                    <div className="w-full max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl bg-[#011627] text-white p-6 md:p-10 rounded-lg shadow-lg bg-opacity-50 text-center mt-[-50%]">
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#41EAD4] mb-6">
+                            Ciphercurve LLC
+                        </h1>
+                        <p className="text-base sm:text-lg md:text-xl leading-relaxed">
+                            We are a software contracting company focusing on Rust and Blockchain development, with deep expertise in Applied Cryptography and Zero Knowledge Proofs.
                         </p>
                         <a href="mailto:contact@ciphercurve.com" className="inline-block mt-6 px-6 py-3 bg-[#41EAD4] text-[#011627] font-semibold rounded-lg shadow-md hover:bg-[#1985A1] transition duration-300">
                             Contact Us
                         </a>
                     </div>
                 </div>
+
+
 
                 <AnimatePresence>
                     {showArrow && (
