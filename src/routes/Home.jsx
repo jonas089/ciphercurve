@@ -32,7 +32,7 @@ const HomePage = () => {
                             Ciphercurve LLC
                         </h1>
                         <p className="text-base sm:text-lg md:text-xl leading-relaxed">
-                            We are a software contracting company focusing on Rust and Blockchain development, with deep expertise in Applied Cryptography and Zero Knowledge Proofs.
+                            We are a software contracting company focussing on Rust and Blockchain development, with deep expertise in Applied Cryptography and Zero Knowledge Proofs.
                         </p>
                         <a href="mailto:contact@ciphercurve.com" className="inline-block mt-6 px-6 py-3 bg-[#41EAD4] text-[#011627] font-semibold rounded-lg shadow-md hover:bg-[#1985A1] transition duration-300">
                             Contact Us
