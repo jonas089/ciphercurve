@@ -27,7 +27,7 @@ const HomePage = () => {
                 <div className="relative min-h-screen flex items-center justify-center px-6">
                     <AnimatedBackground animationName="auroraBorealis" />
 
-                    <div className="w-full max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl bg-[#011627] text-white p-6 md:p-10 rounded-lg shadow-lg bg-opacity-50 text-center mt-[-50%]">
+                    <div className="w-full max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl bg-[#011627] text-white p-6 md:p-10 rounded-lg shadow-lg bg-opacity-50 text-center mt-[-60vh]">
                         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#41EAD4] mb-6">
                             Ciphercurve LLC
                         </h1>
@@ -45,7 +45,7 @@ const HomePage = () => {
                 <AnimatePresence>
                     {showArrow && (
                         <motion.div
-                            className="absolute bottom-20 left-1/2 transform -translate-x-1/2 text-[#41EAD4]"
+                            className="absolute bottom-[25%] left-1/2 transform -translate-x-1/2 text-[#41EAD4]"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
