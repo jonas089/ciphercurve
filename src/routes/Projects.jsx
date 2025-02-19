@@ -6,15 +6,8 @@ const teamMembers = [
         name: "Diseq",
         role: "Research project, distributed sequencing",
         image: "/Diseq.png",
-        github: "https://github.com/jonas089/Diseq"
+        github: "https://github.com/ciphercurve/diseq"
     },
-
-    {
-        name: "CipherPoll",
-        role: "Anonymous Zero Knowledge voting protocol based on Github GPG",
-        image: "/github.png",
-        github: "https://github.com/jonas089/cypher-poll"
-    }
 ];
 
 class Projects extends React.Component {
