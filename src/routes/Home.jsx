@@ -37,7 +37,7 @@ const HomePage = () => {
 
                 <div className="w-full lg:max-w-4xl bg-[#011627] text-white p-6 md:p-10 rounded-lg shadow-lg bg-opacity-50 text-center">
                     <p className="text-base sm:text-lg md:text-xl leading-relaxed">
-                        We are a software contracting company focusing on Rust and Blockchain development, with deep expertise in Applied Cryptography and Zero Knowledge Proofs.
+                        We are a software contracting company focussing on Rust and Blockchain development, with deep expertise in Applied Cryptography and Zero Knowledge Proofs.
                     </p>
                 </div>
 
