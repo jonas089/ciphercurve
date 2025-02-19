@@ -4,6 +4,7 @@ import Home from "./routes/Home";
 import Team from "./routes/Team";
 import Clients from "./routes/Clients"
 import "./index.css";
+import Projects from './routes/Projects';
 
 const Navbar = () => {
   return (
@@ -26,6 +27,7 @@ const Navbar = () => {
         <Link to="/" className="text-white hover:text-[#41EAD4] px-4">Home</Link>
         <Link to="/team" className="text-white hover:text-[#41EAD4] px-4">Team</Link>
         <Link to="/clients" className="text-white hover:text-[#41EAD4] px-4">Clients</Link>
+        <Link to="/projects" className="text-white hover:text-[#41EAD4] px-4">Projects</Link>
       </div>
     </nav>
   );
@@ -34,7 +36,7 @@ const Navbar = () => {
 const Impressum = () => {
   return (
     <footer className="bg-[#1985A1] text-white text-center p-4 mt-auto">
-      <p>Ciphercurve LLC</p>
+      <p>Ciphercurve LLC, 2025</p>
       <p>Zugerstrasse 32, 6341 Zug-Baar</p>
       <p>Email: contact@ciphercurve.com</p>
     </footer>
@@ -50,6 +52,7 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="team" element={<Team />} />
           <Route path="clients" element={<Clients />} />
+          <Route path="projects" element={<Projects />} />
         </Routes>
       </div>
       <Impressum />
