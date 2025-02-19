@@ -23,23 +23,23 @@ const HomePage = () => {
 
     return (
         <div>
-            <div className="w-full min-h-screen flex flex-col md:flex-row items-center justify-between px-10 py-20 relative">
-                <div className="relative min-h-screen flex items-center justify-center px-6">
-                    <AnimatedBackground animationName="auroraBorealis" />
+            <div className="relative min-h-screen flex flex-col items-center px-6 space-y-10 mt-20">
+                <AnimatedBackground animationName="auroraBorealis" />
 
-                    <div className="w-full max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl bg-[#011627] text-white p-6 md:p-10 rounded-lg shadow-lg bg-opacity-50 text-center mt-[-60vh]">
-                        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#41EAD4] mb-6">
-                            Ciphercurve LLC
-                        </h1>
-                        <p className="text-base sm:text-lg md:text-xl leading-relaxed">
-                            We are a software contracting company focussing on Rust and Blockchain development, with deep expertise in Applied Cryptography and Zero Knowledge Proofs.
-                        </p>
-                        <a href="mailto:contact@ciphercurve.com" className="inline-block mt-6 px-6 py-3 bg-[#41EAD4] text-[#011627] font-semibold rounded-lg shadow-md hover:bg-[#1985A1] transition duration-300">
-                            Contact Us
-                        </a>
-                    </div>
+                <div className="w-full lg:max-w-4xl bg-[#011627] text-white p-6 md:p-10 rounded-lg shadow-lg bg-opacity-50 text-center">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl text-[#41EAD4] mb-6">
+                        Ciphercurve GMBH
+                    </h1>
+                    <a href="mailto:contact@ciphercurve.com" className="inline-block mt-6 px-6 py-3 bg-[#41EAD4] text-[#011627] font-semibold rounded-lg shadow-md hover:bg-[#1985A1] transition duration-300">
+                        Contact Us
+                    </a>
                 </div>
 
+                <div className="w-full lg:max-w-4xl bg-[#011627] text-white p-6 md:p-10 rounded-lg shadow-lg bg-opacity-50 text-center">
+                    <p className="text-base sm:text-lg md:text-xl leading-relaxed">
+                        We are a software contracting company focusing on Rust and Blockchain development, with deep expertise in Applied Cryptography and Zero Knowledge Proofs.
+                    </p>
+                </div>
 
 
                 <AnimatePresence>
