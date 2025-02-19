@@ -44,7 +44,7 @@ const Navbar = () => {
 const Impressum = () => {
   return (
     <footer className="bg-[#1985A1] text-white text-center p-4 mt-auto">
-      <p>Ciphercurve LLC, 2025</p>
+      <p>Ciphercurve GmbH, 2025</p>
       <p>Zugerstrasse 32, 6341 Zug-Baar</p>
       <p>Email: contact@ciphercurve.com</p>
     </footer>
