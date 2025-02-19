@@ -23,12 +23,12 @@ const HomePage = () => {
 
     return (
         <div>
-            <div className="relative min-h-screen flex flex-col items-center px-6 space-y-10 mt-20">
+            <div className="relative min-h-screen flex flex-col items-center px-6 space-y-10 sm:mt-10 mt-20">
                 <AnimatedBackground animationName="auroraBorealis" />
 
                 <div className="w-full lg:max-w-4xl bg-[#011627] text-white p-6 md:p-10 rounded-lg shadow-lg bg-opacity-50 text-center">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl text-[#41EAD4] mb-6">
-                        Ciphercurve GMBH
+                        Ciphercurve GMBHf
                     </h1>
                     <a href="mailto:contact@ciphercurve.com" className="inline-block mt-6 px-6 py-3 bg-[#41EAD4] text-[#011627] font-semibold rounded-lg shadow-md hover:bg-[#1985A1] transition duration-300">
                         Contact Us

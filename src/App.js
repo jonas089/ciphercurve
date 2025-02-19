@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="bg-[#012B3A] p-4 shadow-md flex justify-between items-center">
       <div>
         <img
-          src="/logo02.png" // Replace with actual logo path
+          src="/logo02.jpg" // Replace with actual logo path
           alt="Logo"
           className="w-30 h-12 rounded-full"
         />
