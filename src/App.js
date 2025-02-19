@@ -9,10 +9,17 @@ const Navbar = () => {
   return (
     <nav className="bg-[#012B3A] p-4 shadow-md flex justify-between items-center">
       <div>
+        {/* Desktop Logo */}
         <img
           src="/logo02.png"
           alt="Logo"
-          className="w-30 h-12 rounded-full"
+          className="hidden md:block w-30 h-12 rounded-full"
+        />
+        {/* Mobile Logo */}
+        <img
+          src="/logo192.png"
+          alt="Mobile Logo"
+          className="block md:hidden w-30 h-12 rounded-full"
         />
       </div>
       <div>
