@@ -59,7 +59,7 @@ const HomePage = () => {
 
             <div className="bg-[#011627] w-full">
                 <div>
-                    <section className="py-20 px-10 bg-[#012B3A] text-center border border-[#1985A1] rounded-lg">
+                    <section className="py-20 px-10 bg-[#012B3A] text-center">
                         <h2 className="text-4xl font-bold text-[#41EAD4] mb-8">Our Expertise</h2>
                         <div className="grid md:grid-cols-3 gap-8">
                             <div className="p-6 bg-[#011627] rounded-lg shadow-md">
