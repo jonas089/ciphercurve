@@ -8,6 +8,12 @@ const teamMembers = [
         image: "/Diseq.png",
         github: "https://github.com/ciphercurve/diseq"
     },
+    {
+        name: "Toyni STARK",
+        role: "Research project, STARK proving system",
+        image: "/Toyni.png",
+        github: "https://github.com/jonas089/Toyni"
+    }
 ];
 
 class Projects extends React.Component {
