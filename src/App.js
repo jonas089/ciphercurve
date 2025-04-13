@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link, Routes, Route } from 'react-router-dom';
-import Home from "./routes/Home";
-import Team from "./routes/Team";
-import Clients from "./routes/Clients"
-import "./index.css";
+import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
+import Home from './routes/Home';
+import Team from './routes/Team';
+import Clients from './routes/Clients';
 import Projects from './routes/Projects';
+import './index.css';
 
 const Navbar = () => {
   return (
@@ -53,18 +53,20 @@ const Impressum = () => {
 
 const App = () => {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar />
-      <div className="flex-1">
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="team" element={<Team />} />
-          <Route path="clients" element={<Clients />} />
-          <Route path="projects" element={<Projects />} />
-        </Routes>
+    <BrowserRouter>
+      <div className="min-h-screen flex flex-col">
+        <Navbar />
+        <div className="flex-1">
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="team" element={<Team />} />
+            <Route path="clients" element={<Clients />} />
+            <Route path="projects" element={<Projects />} />
+          </Routes>
+        </div>
+        <Impressum />
       </div>
-      <Impressum />
-    </div>
+    </BrowserRouter>
   );
 };
 
