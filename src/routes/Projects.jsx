@@ -4,15 +4,15 @@ import { AnimatedBackground } from 'animated-backgrounds';
 const teamMembers = [
     {
         name: "Diseq",
-        role: "Research project, distributed sequencing",
+        role: "General purpose, distributed message sequencing",
         image: "/Diseq.png",
         github: "https://github.com/ciphercurve/diseq"
     },
     {
         name: "Toyni STARK",
-        role: "Research project, STARK proving system",
+        role: "Zero-knowledge proof system, developed by Ciphercurve",
         image: "/Toyni.png",
-        github: "https://github.com/jonas089/Toyni"
+        github: "https://github.com/ciphercurve/Toyni"
     }
 ];
 
@@ -21,7 +21,7 @@ class Projects extends React.Component {
         return (
             <div className="min-h-screen text-white p-6">
                 <AnimatedBackground animationName="auroraBorealis" />
-                <h2 className="text-3xl font-bold text-center text-white mb-6">Independent Research Projects</h2>
+                <h2 className="text-3xl font-bold text-center text-white mb-6">Projects and Contributions</h2>
                 <div className="flex flex-wrap justify-center gap-6">
                     {teamMembers.map((member, index) => (
                         <div key={index} className="bg-[#012B3A] p-4 rounded-lg shadow-lg w-64 text-center border border-[#1985A1]">
