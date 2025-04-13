@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import Home from './routes/Home';
 import Team from './routes/Team';
 import Clients from './routes/Clients';
@@ -10,13 +10,11 @@ const Navbar = () => {
   return (
     <nav className="bg-[#012B3A] p-3 shadow-md flex justify-between items-center">
       <div>
-        {/* Desktop Logo */}
         <img
           src="/logo02.png"
           alt="Logo"
           className="hidden md:block w-30 h-10 rounded-full"
         />
-        {/* Mobile Logo */}
         <img
           src="/logo192.png"
           alt="Mobile Logo"
@@ -41,6 +39,7 @@ const Navbar = () => {
   );
 };
 
+// ✅ DO NOT REMOVE THIS — your custom Impressum stays here
 const Impressum = () => {
   return (
     <footer className="bg-[#1985A1] text-white text-center p-4 mt-auto">
@@ -53,20 +52,18 @@ const Impressum = () => {
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div className="min-h-screen flex flex-col">
-        <Navbar />
-        <div className="flex-1">
-          <Routes>
-            <Route index element={<Home />} />
-            <Route path="team" element={<Team />} />
-            <Route path="clients" element={<Clients />} />
-            <Route path="projects" element={<Projects />} />
-          </Routes>
-        </div>
-        <Impressum />
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <div className="flex-1">
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="team" element={<Team />} />
+          <Route path="clients" element={<Clients />} />
+          <Route path="projects" element={<Projects />} />
+        </Routes>
       </div>
-    </BrowserRouter>
+      <Impressum />
+    </div>
   );
 };
 
