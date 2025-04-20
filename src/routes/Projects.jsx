@@ -1,7 +1,13 @@
 import React from 'react';
 import { AnimatedBackground } from 'animated-backgrounds';
 
-const teamMembers = [
+const projects = [
+    {
+        name: "Valence Protocol",
+        role: "Interchain development stack by Timewave",
+        image: "/Timewave.png",
+        github: "https://github.com/timewave-computer/valence-protocol"
+    },
     {
         name: "Diseq",
         role: "General purpose, distributed message sequencing",
@@ -23,7 +29,7 @@ class Projects extends React.Component {
                 <AnimatedBackground animationName="auroraBorealis" />
                 <h2 className="text-3xl font-bold text-center text-white mb-6">Projects and Contributions</h2>
                 <div className="flex flex-wrap justify-center gap-6">
-                    {teamMembers.map((member, index) => (
+                    {projects.map((member, index) => (
                         <div key={index} className="bg-[#012B3A] p-4 rounded-lg shadow-lg w-64 text-center border border-[#1985A1]">
                             <img src={member.image} alt={member.name} className="rounded-full mx-auto mb-4 w-32 h-32" />
                             <h3 className="text-xl font-semibold text-white">{member.name}</h3>
