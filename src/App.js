@@ -18,7 +18,7 @@ const Navbar = () => {
         <img
           src="/logo192.png"
           alt="Mobile Logo"
-          className="block md:hidden w-10 h-10 rounded-full"
+          className="block md:hidden w-15 h-10 rounded-full"
         />
       </div>
       <div className="flex space-x-2 md:space-x-4">
