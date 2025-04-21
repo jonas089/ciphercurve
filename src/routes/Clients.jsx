@@ -5,7 +5,7 @@ const teamMembers = [
     {
         name: "Timewave Computer",
         role: "Interchain computing solutions",
-        image: "/timewave.png",
+        image: "/Timewave.png",
         github: "https://github.com/timewave-computer"
     },
 ];
