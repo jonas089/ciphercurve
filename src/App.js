@@ -2,7 +2,6 @@ import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import Home from './routes/Home';
 import Team from './routes/Team';
-import Clients from './routes/Clients';
 import Projects from './routes/Projects';
 import './index.css';
 
@@ -27,9 +26,6 @@ const Navbar = () => {
         </Link>
         <Link to="/team" className="text-white hover:text-[#41EAD4] text-sm md:text-base px-2 md:px-4">
           Team
-        </Link>
-        <Link to="/clients" className="text-white hover:text-[#41EAD4] text-sm md:text-base px-2 md:px-4">
-          Clients
         </Link>
         <Link to="/projects" className="text-white hover:text-[#41EAD4] text-sm md:text-base px-2 md:px-4">
           Projects
@@ -58,7 +54,6 @@ const App = () => {
         <Routes>
           <Route index element={<Home />} />
           <Route path="team" element={<Team />} />
-          <Route path="clients" element={<Clients />} />
           <Route path="projects" element={<Projects />} />
         </Routes>
       </div>

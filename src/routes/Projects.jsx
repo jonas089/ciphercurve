@@ -3,12 +3,6 @@ import { AnimatedBackground } from 'animated-backgrounds';
 
 const projects = [
     {
-        name: "Valence Protocol",
-        role: "Interchain development stack by Timewave",
-        image: "/Timewave.png",
-        github: "https://github.com/timewave-computer/valence-protocol"
-    },
-    {
         name: "Diseq",
         role: "General purpose, distributed message sequencing",
         image: "/Diseq.png",
